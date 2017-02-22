@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const router = require('express').Router();
 module.exports = router;
 
+
 const files = [
   {filename: 'file1.jpg', title:'awesome file 1'},
   {filename: 'file2.jpg', title:'awesome file 2'},
@@ -73,7 +74,7 @@ router.post('/files', function(req, res, next) {
 router.get('/', (req,res) => {
   res.render('index',
     {title: 'This is the title',
-    message: 'We survived week 3'});
+    message: 'We survived week 4'});
 });
 
 router.use(function(req, res, next) {
